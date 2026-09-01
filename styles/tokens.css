@@ -1,0 +1,28 @@
+:root {
+  /* Colors */
+  --color-sky: #b8dceb;
+  --color-paper: #f8f6f2;
+  --color-ink: #401f28;
+  --color-butter: #f7e89c;
+  --color-silver: #d2d6dc;
+  --color-silver-shadow: #8f959c;
+
+  /* Fonts */
+  --font-logo: var(--font-cormorant), serif;
+  --font-heading: "Yuji Mai", serif;
+  --font-body: Helvetica, Arial, sans-serif;
+
+  /* Layout */
+  --max-width: 1200px;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+
+  --radius: 18px;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
