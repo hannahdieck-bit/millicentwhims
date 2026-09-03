@@ -158,9 +158,6 @@ body {
 .site-header {
   width: 100%;
 }
-.site-header {
-  width: 100%;
-}
 
 nav {
   width: 100%;
@@ -1620,5 +1617,32 @@ nav {
     height: 25px;
     padding: 0 8px;
     font-size: 0.58rem;
+  }
+}
+/* Mobile music box */
+@media (max-width: 700px) {
+  .whimsy-player {
+    top: 10px;
+    right: 10px;
+
+    width: 135px;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    z-index: 100;
+  }
+
+  .music-box-title {
+    margin: 0 0 6px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+  }
+
+  .whimsy-player iframe {
+    height: 55px;
+    border-radius: 6px;
   }
 }
