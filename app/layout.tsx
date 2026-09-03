@@ -12,6 +12,14 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Millicent",
   description: "A creative collective making handmade objects and gatherings.",
+  icons: {
+    icon: "/textures/embellishments/tab-swan.png",
+  },
+  openGraph: {
+    title: "Millicent",
+    description: "A creative collective making handmade objects and gatherings.",
+    images: ["/textures/embellishments/millicent-icon.png"],
+  },
 };
 
 export default function RootLayout({
