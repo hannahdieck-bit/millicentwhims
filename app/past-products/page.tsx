@@ -82,7 +82,7 @@ const products = [
             <p>{product.description}</p>
 
             <a
-  href="https://docs.google.com/forms/d/e/1FAIpQLSeMQew4HQqp9vwRQYRrrH78XX1P2s1Ak1G1wnPMA-UmT9ZP2w/viewform"
+  href="https://forms.gle/x5qGHUaEczuopxAr5"
   target="_blank"
   rel="noopener noreferrer"
   className="product-request-button"
@@ -105,7 +105,7 @@ const products = [
         </p>
 
         <a
-  href="https://docs.google.com/forms/d/e/1FAIpQLSeMQew4HQqp9vwRQYRrrH78XX1P2s1Ak1G1wnPMA-UmT9ZP2w/viewform"
+  href="https://forms.gle/x5qGHUaEczuopxAr5"
   target="_blank"
   rel="noopener noreferrer"
   className="product-request-button"
