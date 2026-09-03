@@ -1646,3 +1646,108 @@ nav {
     border-radius: 6px;
   }
 }
+/* Mobile condensed music box */
+.music-box-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .whimsy-player {
+    position: fixed;
+
+    top: 10px;
+    right: 10px;
+
+    width: auto;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    z-index: 1000;
+  }
+
+  .music-box-toggle {
+    display: flex;
+
+    width: 34px;
+    height: 34px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid rgba(210, 214, 220, 0.8);
+    border-radius: 50%;
+
+    background: var(--color-ink);
+    color: var(--color-paper);
+
+    font-family: Georgia, serif;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    box-shadow:
+      0 3px 10px rgba(64, 31, 40, 0.2);
+  }
+
+  .music-box-content {
+    display: none;
+  }
+
+  .whimsy-player.is-open {
+    width: 190px;
+
+    padding: 8px;
+
+    background: #401f28;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(210, 214, 220, 0.5);
+
+    box-shadow:
+      inset 0 2px 8px rgba(255, 255, 255, 0.12),
+      0 8px 20px rgba(64, 31, 40, 0.25);
+  }
+
+  .whimsy-player.is-open .music-box-toggle {
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+
+    width: 24px;
+    height: 24px;
+
+    font-size: 0.75rem;
+  }
+
+  .whimsy-player.is-open .music-box-content {
+    display: block;
+    padding-top: 2px;
+  }
+
+  .whimsy-player.is-open .music-box-title {
+    margin: 0 30px 6px 0;
+
+    color: #f8f6f2;
+
+    font-family: var(--font-heading);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .whimsy-player.is-open iframe {
+    display: block;
+
+    width: 100%;
+    height: 55px;
+
+    border-radius: 6px;
+  }
+}
