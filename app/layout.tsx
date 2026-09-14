@@ -13,8 +13,14 @@ export const metadata: Metadata = {
   title: "Millicent",
   description: "A creative collective making handmade objects and gatherings.",
   icons: {
-    icon: "/textures/embellishments/tab-swan.png",
-  },
+  icon: [
+    {
+      url: "/textures/embellishments/tab-swan.png",
+      type: "image/png",
+    },
+  ],
+  shortcut: "/textures/embellishments/tab-swan.png",
+},
   openGraph: {
     title: "Millicent",
     description: "A creative collective making handmade objects and gatherings.",
