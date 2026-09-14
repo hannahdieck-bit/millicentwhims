@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Millicent",
     description: "A creative collective making handmade objects and gatherings.",
-    images: ["/textures/embellishments/millicent-icon.png"],
+    images: ["/textures/embellishments/Millicent-icon.png"],
   },
 };
 
