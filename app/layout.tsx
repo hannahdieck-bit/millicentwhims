@@ -10,8 +10,10 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.millicentwhims.com"),
   title: "Millicent",
   description: "A creative collective making handmade objects and gatherings.",
+  
   
   openGraph: {
     title: "Millicent",
