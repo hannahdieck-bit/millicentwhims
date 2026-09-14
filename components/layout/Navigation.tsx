@@ -7,12 +7,19 @@ export default function Navigation() {
     <header className="site-header">
 
       <div className="homepage-contact">
-        <a href="mailto:Shopmillicent.co@gmail.com">
-  EMAIL
-</a>
+  <a href="mailto:Shopmillicent.co@gmail.com">
+    EMAIL
+  </a>
 
-        <a href="#">INSTA</a>
-      </div>
+  <a
+    href="https://www.instagram.com/millicent_whims/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    INSTA
+  </a>
+</div>
+
 
       <nav>
         <Link href="/" className="nav-logo">
