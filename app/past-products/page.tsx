@@ -1,59 +1,74 @@
 import Image from "next/image";
 
 export default function PastProducts() {
-const products = [
-  {
-    name: "Cosmetics Pouch",
-    description: "A handmade cosmeticspouch from the Millicent archive.",
-    image: "/images/cosmetics-pouch.png",
-  },
-  {
-    name: "Engagement Banner",
-    description: "A custom piece made to celebrate a special occasion.",
-    image: "/images/engagement-banner.png",
-  },
-  {
-    name: "Quilted Clutch Bag",
-    description: "A quilted handmade clutch from the Millicent archive.",
-    image: "/images/fold-up.png",
-  },
-  {
-    name: "Embroidered Bridal Lounge Set",
-    description: "A handmade embroidered lounge set created for a bride, or maybe just for you",
-    image: "/images/lounge-set.png",
-  },
-  {
-    name: "Photo Album",
-    description: "A handmade album created to hold all your precious memories.",
-    image: "/images/photo-album.png",
-  },
-  {
-    name: "Lace Poncho",
-    description: "A cutie lace poncho from the Millicent archive.",
-    image: "/images/shawl.png",
-  },
-  {
-    name: "Silk Bag",
-    description: "A handmade silk bucket bag.",
-    image: "/images/silk-bag.png",
-  },
-  {
-    name: "Hand-Beaded Tie",
-    description: "A hand-beaded statement piece from the Millicent archive.",
-    image: "/images/tie.png",
-  },
-  {
-    name: "Striped Tote",
-    description: "A handmade striped tote available again by request.",
-    image: "/images/tote-bag.png",
-  },
-  {
-    name: "Wedding Album",
-    description: "A handmade album created so you don't forget a thing about that day.",
-    image: "/images/wedding-album.png",
-  },
-];
-      return (
+  const products = [
+    {
+      name: "Cosmetics Pouch",
+      description: "A handmade cosmetics pouch from the Millicent archive.",
+      image: "/images/cosmetics-pouch.png",
+    },
+    {
+      name: "Engagement Banner",
+      description: "A custom piece made to celebrate a special occasion.",
+      image: "/images/engagement-banner.png",
+    },
+    {
+      name: "Quilted Clutch Bag",
+      description: "A quilted handmade clutch from the Millicent archive.",
+      image: "/images/fold-up.png",
+    },
+    {
+      name: "Embroidered Bridal Lounge Set",
+      description:
+        "A handmade embroidered lounge set created for a bride, or maybe just for you.",
+      image: "/images/lounge-set.png",
+    },
+    {
+      name: "Photo Album",
+      description:
+        "A handmade album created to hold all your precious memories.",
+      image: "/images/photo-album.png",
+    },
+    {
+      name: "Lace Poncho",
+      description: "A cutie lace poncho from the Millicent archive.",
+      image: "/images/shawl.png",
+    },
+    {
+      name: "Silk Bag",
+      description: "A handmade silk bucket bag.",
+      image: "/images/silk-bag.png",
+    },
+    {
+      name: "Slouchy Bow Tie",
+      description: "A perfectly paul mescal-coded tie to fix your boyfriend with.",
+      image: "/images/bow-tie.png",
+    },
+    {
+      name: "Hand-Beaded Tie",
+      description: "A hand-beaded statement piece from the Millicent archive.",
+      image: "/images/tie.png",
+    },
+    {
+      name: "Striped Tote",
+      description: "A handmade striped tote available again by request.",
+      image: "/images/tote-bag.png",
+    },
+    {
+      name: "Wedding Guest Bag",
+      description:
+        "A handmade little bag for celebrating, dancing, and carrying your essentials.",
+      image: "/images/wedding-guest-bag.png",
+    },
+    {
+      name: "Wedding Album",
+      description:
+        "A handmade album created so you don't forget a thing about that day.",
+      image: "/images/wedding-album.png",
+    },
+  ];
+
+  return (
     <main className="past-products">
       <section className="past-products-intro">
         <p className="past-products-kicker">The Millicent Archive</p>
@@ -82,13 +97,13 @@ const products = [
             <p>{product.description}</p>
 
             <a
-  href="https://forms.gle/x5qGHUaEczuopxAr5"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="product-request-button"
->
-  Request This Again →
-</a>
+              href="https://forms.gle/x5qGHUaEczuopxAr5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="product-request-button"
+            >
+              Request This Again →
+            </a>
           </article>
         ))}
       </section>
@@ -105,13 +120,13 @@ const products = [
         </p>
 
         <a
-  href="https://forms.gle/x5qGHUaEczuopxAr5"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="product-request-button"
->
-  Start an Order →
-</a>
+          href="https://forms.gle/x5qGHUaEczuopxAr5"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="product-request-button"
+        >
+          Start an Order →
+        </a>
       </section>
     </main>
   );
