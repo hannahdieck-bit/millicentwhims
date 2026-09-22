@@ -3,6 +3,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import Navigation from "@/components/layout/Navigation";
 import ButterflyCursor from "@/components/ui/ButterflyCursor";
 import "./globals.css";
+import Script from "next/script";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -29,17 +30,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cormorant.variable}>
+      <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-56VTM94R41"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-56VTM94R41');
+          `}
+        </Script>
+
+        <Navigation />
         <ButterflyCursor />
-
-        <div className="page-background">
-          <div className="page-decorations" />
-          <div className="margin-left" />
-          <div className="margin-right" />
-
-          <Navigation />
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
