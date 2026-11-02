@@ -4,23 +4,36 @@ export default function Events() {
   return (
     <main className="events-page">
 
-      {/* Upcoming Event */}
+      {/* Stay Tuned */}
 
-   <section className="upcoming-event">
-  <p className="events-kicker">✦ Upcoming Event ✦</p>
+      <section className="upcoming-event">
+        <p className="events-kicker">✦ The Gathering Place ✦</p>
 
-  <div className="event-flyer-frame">
-    <div className="event-flyer">
-      <Image
-        src="/images/next-event.png"
-        alt="Upcoming Millicent event"
-        width={1080}
-        height={1350}
-      />
-    </div>
-  </div>
-</section>
+        <div className="stay-tuned">
+          
 
+          <h1>More little gatherings soon...</h1>
+
+          <p>
+            We’re dreaming up our next little something.
+            Until then, stay tuned for handmade things,
+            new projects, and other unnecessary delights.
+          </p>
+
+          <p className="stay-tuned-signoff">
+            In the spirit of abundance, always.
+          </p>
+
+          <a
+            href="https://www.instagram.com/millicent_whims/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="stay-tuned-link"
+          >
+            Follow along on Instagram ✦
+          </a>
+        </div>
+      </section>
 
       {/* Past Events */}
 
@@ -37,12 +50,11 @@ export default function Events() {
         </div>
 
         <div className="past-event-flyers">
-
           <article className="past-event-card">
             <div className="past-event-image">
               <Image
                 src="/images/next-event.png"
-                alt="Past Millicent event"
+                alt="Flyer for Millicent's first Halloween pop-up"
                 width={1080}
                 height={1350}
               />
@@ -51,11 +63,10 @@ export default function Events() {
             <h3>Our First Gathering</h3>
 
             <p>
-              A little gathering of creative people, handmade things, and
-              good company.
+              Our first little pop-up: handmade things, creative people,
+              and a Halloween afternoon together.
             </p>
           </article>
-
         </div>
       </section>
 

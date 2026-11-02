@@ -1,7 +1,23 @@
+
 import Image from "next/image";
 
 export default function PastProducts() {
   const products = [
+    {
+      name: "Shoulder Bag",
+      description: "A handmade shoulder bag from the Millicent archive.",
+      image: "/images/shoulder-bag.png",
+    },
+    {
+      name: "Lace Tote",
+      description: "A cutie lace tote from the Millicent archive.",
+      image: "/images/lace-tote.png",
+    },
+    {
+      name: "Skinny Scarf",
+      description: "A handmade skinny scarf...the perfect accessory.",
+      image: "/images/skinny-scarf.png",
+    },
     {
       name: "Cosmetics Pouch",
       description: "A handmade cosmetics pouch from the Millicent archive.",
@@ -41,7 +57,8 @@ export default function PastProducts() {
     },
     {
       name: "Slouchy Bow Tie",
-      description: "A perfectly paul mescal-coded tie to fix your boyfriend with.",
+      description:
+        "A perfectly paul mescal-coded tie to fix your boyfriend with.",
       image: "/images/bow-tie.png",
     },
     {

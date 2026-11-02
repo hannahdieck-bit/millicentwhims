@@ -1,5 +1,6 @@
+
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Beth_Ellen } from "next/font/google";
 import Navigation from "@/components/layout/Navigation";
 import ButterflyCursor from "@/components/ui/ButterflyCursor";
 import "./globals.css";
@@ -10,12 +11,17 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
 });
 
+const bethEllen = Beth_Ellen({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-beth-ellen",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.millicentwhims.com"),
   title: "Millicent",
   description: "A creative collective making handmade objects and gatherings.",
-  
-  
+
   openGraph: {
     title: "Millicent",
     description: "A creative collective making handmade objects and gatherings.",
@@ -30,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${cormorant.variable} ${bethEllen.variable}`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-56VTM94R41"
           strategy="afterInteractive"
